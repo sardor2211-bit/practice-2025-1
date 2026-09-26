@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О проекте — Филин</title>
+  <meta name="description" content="Филин — сервис подбора преподавателя под стиль обучения студента. Проект по дисциплине «Проектная деятельность», Московский Политех.">
+  <link rel="icon" href="images/owl.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 10l10 8h20l10-8v24c0 14-9 24-20 24S12 48 12 34z" fill="#f5a524"/><circle cx="23" cy="30" r="9" fill="#101826"/><circle cx="41" cy="30" r="9" fill="#101826"/><circle cx="23" cy="30" r="4" fill="#fff4dd"/><circle cx="41" cy="30" r="4" fill="#fff4dd"/><path d="M29 38l3 5 3-5z" fill="#101826"/><path d="M22 48q10 6 20 0" stroke="#101826" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg><span>Филин</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Меню">Меню</button>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html" class="active">О проекте</a>
+        <a href="match.html">Подбор</a>
+        <a href="survey.html">Исследование</a>
+        <a href="members.html">Участники</a>
+        <a href="journal.html">Журнал</a>
+        <a href="partner.html">Партнёр</a>
+        <a href="resources.html">Ресурсы</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero page-hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">О проекте</span>
+        <h1>Как работает «Филин»</h1>
+        <p class="lead">Сервис сопоставляет ожидания ученика с профилем преподавателя и объясняет, почему рекомендован именно этот человек.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap split">
+      <div>
+        <h2>Цель и задачи</h2>
+        <p><b>Цель проекта</b> — сократить время поиска преподавателя и снизить число «неудачных» выборов за счёт подбора по стилю обучения, а не только по предмету и цене.</p>
+        <p><b>Задачи:</b></p>
+        <ul class="list-dash">
+          <li>изучить, как студенты выбирают преподавателей, и что для них важно;</li>
+          <li>ввести шкалу строгости преподавателя от 1 (мягкий) до 5 (строгий);</li>
+          <li>разработать алгоритм оценки совпадения ученика и преподавателя;</li>
+          <li>сделать прототип интерфейса подбора;</li>
+          <li>представить проект на сайте и в репозитории.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Шкала строгости</h3>
+        <p><span class="chip green">1–2 · Мягкий</span> терпеливо объясняет, не давит сроками, подходит тем, кто боится предмета.</p>
+        <p><span class="chip blue">3 · Сбалансированный</span> ставит цели и проверяет домашние задания, но оставляет свободу.</p>
+        <p><span class="chip red">4–5 · Строгий</span> жёсткий контроль, много практики, быстрый темп — для тех, кому нужен результат к сессии.</p>
+        <p class="note">Уровень строгости рассчитывается из оценок учеников после занятий, а не со слов самого преподавателя.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head"><h2>Схема работы сервиса</h2><p>Данные из анкеты ученика и из отзывов попадают в алгоритм подбора, который возвращает трёх лучших преподавателей.</p></div>
+      <div class="diagram"><svg viewBox="0 0 860 300" role="img" aria-label="Схема работы сервиса Филин">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5d6679"/></marker></defs>
+<g font-family="Manrope, sans-serif" font-size="15" text-anchor="middle">
+<rect x="10" y="40" width="170" height="90" rx="12" fill="#fff4dd" stroke="#f5a524" stroke-width="2"/>
+<text x="95" y="78" font-weight="700" fill="#1b2230">Анкета ученика</text><text x="95" y="102" fill="#5d6679" font-size="13">предмет, стиль, бюджет</text>
+<rect x="10" y="170" width="170" height="90" rx="12" fill="#e2f3ea" stroke="#3f8f6b" stroke-width="2"/>
+<text x="95" y="208" font-weight="700" fill="#1b2230">Отзывы учеников</text><text x="95" y="232" fill="#5d6679" font-size="13">оценка строгости, ★</text>
+<rect x="250" y="105" width="180" height="90" rx="12" fill="#e4ecfb" stroke="#2a4c8f" stroke-width="2"/>
+<text x="340" y="143" font-weight="700" fill="#1b2230">База преподавателей</text><text x="340" y="167" fill="#5d6679" font-size="13">предметы, цена, формат</text>
+<rect x="500" y="90" width="170" height="120" rx="12" fill="#101826"/>
+<text x="585" y="138" font-weight="700" fill="#f5a524">Алгоритм</text><text x="585" y="160" font-weight="700" fill="#f5a524">подбора</text><text x="585" y="184" fill="#c8d1e2" font-size="13">формула (1)</text>
+<rect x="740" y="105" width="110" height="90" rx="12" fill="#fff4dd" stroke="#f5a524" stroke-width="2"/>
+<text x="795" y="143" font-weight="700" fill="#1b2230">Топ-3</text><text x="795" y="167" fill="#5d6679" font-size="13">и % совпадения</text>
+<path d="M180 85 C 450 40, 470 100, 498 130" stroke="#5d6679" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+<path d="M180 215 L 248 170" stroke="#5d6679" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+<path d="M430 150 L 498 150" stroke="#5d6679" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+<path d="M670 150 L 738 150" stroke="#5d6679" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+</g></svg></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>Алгоритм подбора</h2><p>Итоговая оценка совпадения — взвешенная сумма четырёх частных оценок, каждая от 0 до 1.</p></div>
+      <div class="formula">S = 0,35·S<sub>стиль</sub> + 0,30·S<sub>рейтинг</sub> + 0,20·S<sub>цена</sub> + 0,15·S<sub>формат</sub> &nbsp;&nbsp;(1)</div>
+      <div class="grid two">
+        <div class="card"><h3>Частные оценки</h3>
+          <ul class="list-dash">
+            <li><b>S<sub>стиль</sub></b> = 1 − |c<sub>преп</sub> − c<sub>уч</sub>| / 4, где c — уровень строгости 1–5;</li>
+            <li><b>S<sub>рейтинг</sub></b> — сглаженный рейтинг, делённый на 5;</li>
+            <li><b>S<sub>цена</sub></b> = 1, если цена не выше бюджета, иначе штраф пропорционально превышению;</li>
+            <li><b>S<sub>формат</sub></b> = 1 при совпадении формата (онлайн/очно), иначе 0,3.</li>
+          </ul>
+        </div>
+        <div class="card"><h3>Почему такие веса</h3>
+          <p>Веса взяты из опроса: «понятно объясняет» и совпадение стиля назвали важными 81% и 55% респондентов, рейтинг — 66%, цену — 59%, расписание и формат — 44%.</p>
+          <p>Рейтинг сглаживается байесовским способом: преподаватель с тремя отзывами «5,0» не обгоняет преподавателя с 80 отзывами «4,8».</p>
+          <div class="formula" style="font-size:17px">R = (r·n + 4,0·5) / (n + 5) &nbsp;&nbsp;(2)</div>
+        </div>
+      </div>
+      <p style="margin-top:22px">Код алгоритма: <a href="https://github.com/sardor2211-bit/practice-2025-1/blob/master/src/filin-match.js">src/filin-match.js</a>. Попробовать можно на странице <a href="match.html">«Подбор»</a>.</p>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head"><h2>Для кого</h2></div>
+      <div class="grid three">
+        <div class="card"><div class="icon">🎓</div><h3>Студенты</h3><p>Подготовка к сессии, помощь с высшей математикой и программированием.</p></div>
+        <div class="card"><div class="icon">🌍</div><h3>Иностранные студенты</h3><p>Поиск терпеливого преподавателя русского языка и адаптация к учёбе.</p></div>
+        <div class="card"><div class="icon">👩‍🏫</div><h3>Преподаватели</h3><p>Приходят ученики, которым подходит их стиль, — меньше отказов после первого занятия.</p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2026 · Проект «Филин» · Мирзоахмедов С.С., группа 251-335<br>Московский Политех · Факультет информационных технологий</div>
+      <div><a href="https://github.com/sardor2211-bit/practice-2025-1">Репозиторий на GitHub</a></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
