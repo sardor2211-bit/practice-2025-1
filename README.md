@@ -57,3 +57,13 @@ python3 -m http.server 8000
 ```
 
 После этого откройте http://localhost:8000. Сайт публикуется на GitHub Pages автоматически при каждом push в ветку `master` (см. [.github/workflows/pages.yml](.github/workflows/pages.yml)).
+
+## Скриншоты сайта
+
+| Главная | О проекте |
+|-|-|
+| ![Главная](docs/screenshots/index.jpg) | ![О проекте](docs/screenshots/about.jpg) |
+| **Подбор** | **Исследование** |
+| ![Подбор](docs/screenshots/match.jpg) | ![Исследование](docs/screenshots/survey.jpg) |
+
+Скриншоты всех страниц — в папке [docs/screenshots](docs/screenshots/).
