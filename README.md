@@ -1,6 +1,7 @@
 # Проектная (учебная) практика — проект «Филин»
 
 **Сайт:** https://sardor2211-bit.github.io/practice-2025-1/
+
 **Репозиторий:** https://github.com/sardor2211-bit/practice-2025-1
 
 ## Участники
