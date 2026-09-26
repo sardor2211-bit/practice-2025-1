@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Журнал — Филин</title>
+  <meta name="description" content="Филин — сервис подбора преподавателя под стиль обучения студента. Проект по дисциплине «Проектная деятельность», Московский Политех.">
+  <link rel="icon" href="images/owl.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 10l10 8h20l10-8v24c0 14-9 24-20 24S12 48 12 34z" fill="#f5a524"/><circle cx="23" cy="30" r="9" fill="#101826"/><circle cx="41" cy="30" r="9" fill="#101826"/><circle cx="23" cy="30" r="4" fill="#fff4dd"/><circle cx="41" cy="30" r="4" fill="#fff4dd"/><path d="M29 38l3 5 3-5z" fill="#101826"/><path d="M22 48q10 6 20 0" stroke="#101826" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg><span>Филин</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Меню">Меню</button>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="match.html">Подбор</a>
+        <a href="survey.html">Исследование</a>
+        <a href="members.html">Участники</a>
+        <a href="journal.html" class="active">Журнал</a>
+        <a href="partner.html">Партнёр</a>
+        <a href="resources.html">Ресурсы</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero page-hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Журнал</span>
+        <h1>Ход работы над проектом</h1>
+        <p class="lead">Хронология практики с февраля по сентябрь 2026 года.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="timeline">
+<article class="post card"><time>Февраль 2026</time><h3>Старт: команда и идея «Филина»</h3><p>Команда по проектной деятельности выбрала идею сервиса подбора преподавателя. Я взял на себя исследование аудитории. Создал репозиторий по шаблону практики, настроил Git, изучил структуру папок и синтаксис Markdown.</p><div><span class="chip light">Git</span> <span class="chip light">Идея</span> </div></article>
+<article class="post card"><time>Март 2026</time><h3>Анкета и гипотезы</h3><p>Сформулировали гипотезу: студентам важен не только предмет и цена, но и стиль преподавателя — строгий или мягкий. Составил анкету из 8 вопросов в Яндекс Формах и проверил её на пяти одногруппниках, после чего переписал два непонятных вопроса.</p><div><span class="chip light">Исследование</span> </div></article>
+<article class="post card"><time>Апрель 2026</time><h3>Опрос 64 студентов и первые цифры</h3><p>Разослал анкету в чаты потоков 1–2 курсов. Собрано 64 ответа. 63% тех, кто занимался с репетитором, сталкивались с неподходящим стилем преподавания — гипотеза подтвердилась. Результаты оформлены на странице «Исследование».</p><div><span class="chip light">Статистика</span> </div></article>
+<article class="post card"><time>Май 2026</time><h3>STARTUP HUB: тренинги предпринимательских компетенций</h3><p>Участвовал в программе STARTUP HUB (ООО «Деловая сфера», МФТИ). На тренингах прошли генерацию идеи проекта, формирование команды стартапа, MVP и бизнес-модель. Полученные знания пригодились при описании ценности «Филина» для студентов и преподавателей. Получил сертификат участника.</p><div><span class="chip light">Партнёр</span> <span class="chip light">Сертификат</span> </div><div class="photos"><figure><img src="images/startup-hub-idea.jpg" alt="Карточка «Идея проекта»" loading="lazy"><figcaption class="note">Карточка «Идея проекта»</figcaption></figure><figure><img src="images/startup-hub-team.jpg" alt="Тренинг «Команда стартапа»" loading="lazy"><figcaption class="note">Тренинг «Команда стартапа»</figcaption></figure><figure><img src="images/startup-hub-group.jpg" alt="Участники с сертификатами" loading="lazy"><figcaption class="note">Участники с сертификатами</figcaption></figure></div></article>
+<article class="post card"><time>Май 2026</time><h3>Алгоритм подбора</h3><p>По результатам опроса предложил четыре критерия и веса: стиль 0,35, рейтинг 0,30, цена 0,20, формат 0,15. Реализовал прототип на JavaScript с байесовским сглаживанием рейтинга, чтобы новые преподаватели с парой отзывов не оказывались сразу наверху.</p><div><span class="chip light">JavaScript</span> <span class="chip light">Алгоритм</span> </div></article>
+<article class="post card"><time>Сентябрь 2026</time><h3>Сайт по тематике проекта и отчёт</h3><p>По замечаниям руководителя практики переделал сайт полностью под тематику проекта «Филин»: 8 страниц, демо-подбор, диаграммы опроса, журнал и ресурсы. Опубликовал сайт на GitHub Pages, добавил в отчёт скриншоты и ссылки на репозиторий.</p><div><span class="chip light">Сайт</span> <span class="chip light">Отчёт</span> </div></article>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2026 · Проект «Филин» · Мирзоахмедов С.С., группа 251-335<br>Московский Политех · Факультет информационных технологий</div>
+      <div><a href="https://github.com/sardor2211-bit/practice-2025-1">Репозиторий на GitHub</a></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
