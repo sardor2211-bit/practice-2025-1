@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Подбор — Филин</title>
+  <meta name="description" content="Филин — сервис подбора преподавателя под стиль обучения студента. Проект по дисциплине «Проектная деятельность», Московский Политех.">
+  <link rel="icon" href="images/owl.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 10l10 8h20l10-8v24c0 14-9 24-20 24S12 48 12 34z" fill="#f5a524"/><circle cx="23" cy="30" r="9" fill="#101826"/><circle cx="41" cy="30" r="9" fill="#101826"/><circle cx="23" cy="30" r="4" fill="#fff4dd"/><circle cx="41" cy="30" r="4" fill="#fff4dd"/><path d="M29 38l3 5 3-5z" fill="#101826"/><path d="M22 48q10 6 20 0" stroke="#101826" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg><span>Филин</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Меню">Меню</button>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="match.html" class="active">Подбор</a>
+        <a href="survey.html">Исследование</a>
+        <a href="members.html">Участники</a>
+        <a href="journal.html">Журнал</a>
+        <a href="partner.html">Партнёр</a>
+        <a href="resources.html">Ресурсы</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero page-hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Прототип</span>
+        <h1>Подбор преподавателя</h1>
+        <p class="lead">Заполните анкету — алгоритм сразу пересчитает рейтинг. Данные преподавателей демонстрационные.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap match-layout">
+      <form id="match-form" class="card form-card">
+        <label for="subject">Предмет</label>
+        <select id="subject" name="subject"><option value="math">Высшая математика</option><option value="programming">Программирование</option><option value="physics">Физика</option><option value="english">Английский язык</option><option value="russian">Русский язык</option><option value="discrete">Дискретная математика</option></select>
+
+        <label for="strictness">Какой преподаватель нужен</label>
+        <input id="strictness" name="strictness" type="range" min="1" max="5" step="1" value="3">
+        <div class="range-labels"><span>мягкий</span><span>строгий</span></div>
+        <p class="note">Выбрано: <span id="strictness-value" class="style-value"></span></p>
+
+        <label for="budget">Бюджет за занятие, ₽</label>
+        <input id="budget" name="budget" type="number" min="300" step="100" value="1500">
+
+        <label for="format">Формат</label>
+        <select id="format" name="format">
+          <option value="any">Не важно</option>
+          <option value="online">Онлайн</option>
+          <option value="offline">Очно</option>
+        </select>
+
+        <button class="btn" type="submit">Подобрать</button>
+      </form>
+      <div>
+        <h2>Рекомендации</h2>
+        <div id="results" class="results" aria-live="polite"></div>
+        <p class="note" style="margin-top:16px">Процент совпадения считается по формуле (1) со страницы <a href="about.html">«О проекте»</a>.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2026 · Проект «Филин» · Мирзоахмедов С.С., группа 251-335<br>Московский Политех · Факультет информационных технологий</div>
+      <div><a href="https://github.com/sardor2211-bit/practice-2025-1">Репозиторий на GitHub</a></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/filin-match.js"></script>
+  <script src="js/match-ui.js"></script>
+</body>
+</html>
