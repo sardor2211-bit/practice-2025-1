@@ -14,9 +14,9 @@ git clone git@github.com:sardor2211-bit/practice-2025-1.git
 git checkout -b site
 git add site/
 git commit -m "site: страница с результатами опроса"
-git checkout master
+git checkout main
 git merge site
-git push origin master
+git push origin main
 ```
 
 ## 2. Документация в Markdown (5 ч)

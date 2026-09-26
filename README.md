@@ -56,7 +56,7 @@ cd site
 python3 -m http.server 8000
 ```
 
-После этого откройте http://localhost:8000. Сайт публикуется на GitHub Pages автоматически при каждом push в ветку `master` (см. [.github/workflows/pages.yml](.github/workflows/pages.yml)).
+После этого откройте http://localhost:8000. Сайт публикуется на GitHub Pages автоматически при каждом push в ветку `main` (см. [.github/workflows/pages.yml](.github/workflows/pages.yml)).
 
 ## Скриншоты сайта
 
